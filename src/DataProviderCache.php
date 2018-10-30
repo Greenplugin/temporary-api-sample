@@ -31,7 +31,7 @@ class DataProviderCache implements DataProviderInterface
     public function __construct(DataProviderInterface $dataProvider, CacheItemPoolInterface $cache, LoggerInterface $logger)
     {
         $this->dataProvider = $dataProvider;
-        $this->$cache = $cache;
+        $this->cache = $cache;
         $this->logger = $logger;
     }
 
